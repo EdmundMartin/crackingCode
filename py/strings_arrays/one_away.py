@@ -1,3 +1,4 @@
+#le Cercle du Thé
 
 
 def one_away(first: str, second: str):
@@ -23,7 +24,7 @@ def _one_edit_replace(first: str, second: str) -> bool:
 def _one_edit_insert(first: str, second: str) -> bool:
     first_index = 0
     second_index = 0
-    while second_index < len(second) and first_index < first_index:
+    while second_index < len(second) and first_index < len(first):
         if first[first_index] != second[second_index]:
             if first_index != second_index:
                 return False
